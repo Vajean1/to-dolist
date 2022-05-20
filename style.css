@@ -4,29 +4,47 @@
     margin: 0px;
 }
 
-h1 {
-    padding-top: 10px;
+header {
+    margin-top: 10px;
     text-align: center;
+    border-style: solid;
+    border-color: black;
 }
 
 .section1 {
     display: flex;
-    padding-top: 20px;
+    margin-top: 50px;
     flex-direction: column;
     align-items: center;
     padding-bottom: 10px;
+    border-style: solid;
+    border-color: black;
 }
 
 .container-1-recebimento {
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-style: solid;
+    border-color: black;
+}
+
+.container-2-itens {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+    border-color: black;
 }
 
 #item-a {
     width: 400px;
 }
 
-.container-2-itens {
+.form-recebimento {
+    display: flex;
     flex-direction: column;
+    align-items: center;
 }
