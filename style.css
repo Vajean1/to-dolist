@@ -40,7 +40,7 @@ header {
 }
 
 #item-a {
-    width: 400px;
+    width: auto;
 }
 
 .form-recebimento {
