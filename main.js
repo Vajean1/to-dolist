@@ -30,7 +30,7 @@ function CriarItens() {
         
         if (getTxt == false) {
             getFormRecebimento.innerHTML = 'APERTE F5 E INSIRA ALGUM ITEM.';
-            DormirEreload();
+            DormirEreload(3000);
         } else {
             CriarInput();
             CriarLabel();
