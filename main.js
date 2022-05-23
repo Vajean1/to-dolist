@@ -29,7 +29,7 @@ function CriarItens() {
         }
         
         if (getTxt == false) {
-            getFormRecebimento.innerHTML = 'APERTE F5 E INSIRA ALGUM ITEM.';
+            getFormRecebimento.innerHTML = 'Aguarde E INSIRA ALGUM ITEM.';
             DormirEreload(3000);
         } else {
             CriarInput();
