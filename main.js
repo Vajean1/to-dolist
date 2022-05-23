@@ -1,11 +1,11 @@
 // functions
 
 function DormirEreload(Miliseconds) {
-    var retorno = setTimeout(document.location.reload, Miliseconds);
-    return retorno;
+    function recarregar() {
+        document.location.reload()
+    }
+    setTimeout(recarregar, Miliseconds);
 }
-
-var getFormRecebimento = document.querySelector('.form-recebimento');
 
 function CriarItens() {
     //Variáveis para criação do input
@@ -15,6 +15,8 @@ function CriarItens() {
     var getTxt = document.querySelector('#item-a').value;
     var elemento_filho_label = document.createElement('label');
     var texto = document.createTextNode(getTxt);
+    //Variavel para verificação
+    var getFormRecebimento = document.querySelector('.form-recebimento');
         
         function CriarInput() {
             elemento_filho_input.setAttribute('type', 'checkbox');
@@ -28,7 +30,7 @@ function CriarItens() {
         
         if (getTxt == false) {
             getFormRecebimento.innerHTML = 'APERTE F5 E INSIRA ALGUM ITEM.';
-            return DormirEreload(2000);
+            DormirEreload();
         } else {
             CriarInput();
             CriarLabel();
